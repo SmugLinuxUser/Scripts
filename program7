@@ -1,0 +1,12 @@
+function diffArray(arr1, arr2) {
+  var newArr = [];
+  for(var i = 0; i < arr1.length; i++){
+    if(arr1.includes(arr2[i]) == false){
+      newArr.push(arr2[i])
+    }
+  
+  }
+  console.log(newArr);
+}
+
+diffArray(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]);

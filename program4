@@ -1,0 +1,12 @@
+var arrg = [];
+var franken = [];
+function frankenSplice(arr1, arr2, n) {
+  arrg = arr1.slice(0);
+  franken = arr2.slice(0);
+  for (var i = 0; i < arrg.length ; i++){
+    franken.splice(n, 0, arrg[i])
+  }
+  console.log(franken);
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 3);
